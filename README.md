@@ -1,24 +1,94 @@
 # RecallIQ Customer Re-Engagement Agent
 
-Static browser-only demo. No Node server or backend API is required.
+A frontend-only customer re-engagement platform designed to help businesses identify inactive customers, create targeted win-back campaigns, and improve customer retention through personalized outreach strategies.
 
-## Run locally
+## 🚀 Live Demo
 
-Open `index.html` directly in your browser, or serve the folder with any static file server:
+**Application URL:**
+https://6a2ef7bdfef10a5c8936ea30--resplendent-gnome-0f4fa3.netlify.app/
+
+## 📌 Features
+
+* Customer segmentation based on engagement status
+* Create and manage re-engagement campaigns
+* Track campaign history and customer interactions
+* Responsive and user-friendly interface
+* Browser-based persistent storage using Local Storage
+* No backend or database required
+
+## 🛠️ Tech Stack
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* Local Storage API
+
+## 💻 Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+```
+
+Open `index.html` directly in your browser or run:
 
 ```bash
 npm start
 ```
 
-## Data storage
+## 📂 Data Storage
 
-All customer and campaign data is stored in `localStorage`:
+All application data is stored locally in the browser using Local Storage.
 
-- `recalliq.customers.v1` — customer records
-- `recalliq.campaigns.v3` — launched campaigns
+| Key                     | Description               |
+| ----------------------- | ------------------------- |
+| `recalliq.customers.v1` | Stores customer records   |
+| `recalliq.campaigns.v3` | Stores launched campaigns |
 
-On first visit, sample customers are loaded automatically and campaigns start empty.
+### Default Behavior
 
-## Deploy
+* Sample customer data is automatically loaded on the first visit.
+* Campaign history starts empty.
+* Data persists until Local Storage is cleared.
 
-Deploy the project folder as a static site on [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/). Set the publish directory to this folder root (where `index.html` lives).
+## 📁 Project Structure
+
+```text
+/
+├── index.html
+├── assets/
+├── css/
+├── js/
+├── README.md
+```
+
+## 🌐 Deployment
+
+This project is deployed on Netlify and can also be deployed easily on:
+
+* Netlify
+* GitHub Pages
+
+Since the application is completely static, no server-side configuration is required.
+
+## 🔮 Future Enhancements
+
+* Backend integration
+* User authentication
+* Email and SMS campaign integrations
+* Advanced campaign analytics
+* Multi-user support
+* Customer activity tracking dashboard
+
+
+## 👨‍💻 Author
+
+**Omkar Muchlambe**
+
+Frontend Developer 
+
+### Live Application
+
+https://6a2ef7bdfef10a5c8936ea30--resplendent-gnome-0f4fa3.netlify.app/
